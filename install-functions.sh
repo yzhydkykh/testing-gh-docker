@@ -7,8 +7,9 @@ fi
 
 echo "HELLO WORLD!"
 ls
-yarn install && yarn build
-cd packages/app/functions
+cd packages/app/
+yarn install
+cd functions
 yarn install
 cd ../../..
 firebase deploy --token ${FIREBASE_TOKEN} --only functions
