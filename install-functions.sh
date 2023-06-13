@@ -5,4 +5,5 @@ if [ -z "${FIREBASE_TOKEN}" ]; then
     exit 1
 fi
 
+echo "HELLO WORLD!"
 firebase deploy --token ${FIREBASE_TOKEN} \ --only functions
