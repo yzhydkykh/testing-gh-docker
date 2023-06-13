@@ -4,7 +4,7 @@ FROM node:10-alpine
 #WORKDIR /packages/app
 
 # Install system dependencies
-RUN apk update && apk add build-essential gcc
+RUN apk update
 
 # Install firebase-tools
 RUN npm install -g firebase-tools
