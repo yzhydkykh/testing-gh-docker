@@ -5,7 +5,6 @@ FROM node:10-alpine
 
 # Install system dependencies
 RUN apk update
-
 # Install firebase-tools
 RUN npm install -g firebase-tools
 
