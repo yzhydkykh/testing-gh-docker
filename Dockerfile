@@ -8,6 +8,6 @@ RUN apk update
 # Install firebase-tools
 RUN npm install -g firebase-tools
 # Copies your code file from your action repository to the filesystem path `/` of the container
-COPY --chmod=+x install-functions.sh /install-functions.sh
+COPY install-functions.sh /install-functions.sh
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
-ENTRYPOINT ["/install-functions.sh"]
+ENTRYPOINT ["--chmod=a+x /install-functions.sh"]
