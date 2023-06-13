@@ -11,4 +11,4 @@ RUN npm install -g firebase-tools
 COPY install-functions.sh /install-functions.sh
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
-ENTRYPOINT ["/install-functions.sh"]
+CMD ["/install-functions.sh"]
