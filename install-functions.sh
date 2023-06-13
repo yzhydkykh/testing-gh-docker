@@ -6,4 +6,4 @@ if [ -z "${FIREBASE_TOKEN}" ]; then
 fi
 
 echo "HELLO WORLD!"
-firebase deploy --token ${FIREBASE_TOKEN} \ --only functions
+firebase deploy --token ${FIREBASE_TOKEN} --only functions
