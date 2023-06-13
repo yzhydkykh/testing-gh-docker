@@ -5,11 +5,9 @@ if [ -z "${FIREBASE_TOKEN}" ]; then
     exit 1
 fi
 
-echo "HELLO WORLD!"
-ls
 cd packages/app/
 yarn install
 cd functions
 yarn install
-cd ../../..
+cd ..
 firebase deploy --token ${FIREBASE_TOKEN} --only functions

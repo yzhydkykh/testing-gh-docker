@@ -1,21 +1,16 @@
 # Hello world docker action
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+This action deploys functions for our symbioteAI application
 
 ## Inputs
 
-## `who-to-greet`
+## `FIREBASE_TOKEN`
 
-**Required** The name of the person to greet. Default `"World"`.
+**Required** Firebase token to use for the deployment env
 
-## Outputs
-
-## `time`
-
-The time we greeted you.
 
 ## Example usage
 
 uses: actions/hello-world-docker-action@v2
 with:
-  who-to-greet: 'Mona the Octocat'
+  FIREBASE_TOKEN: "${env.SUPER_SECRET_TOKEN}"
