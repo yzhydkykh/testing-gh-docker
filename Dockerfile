@@ -1,7 +1,7 @@
 # Stage 1: Build
 FROM node:18-alpine
 
-#WORKDIR /packages/app
+WORKDIR /packages/app
 
 # Install system dependencies
 RUN apk update
