@@ -4,13 +4,7 @@ FROM node:10-alpine
 #WORKDIR /packages/app
 
 # Install system dependencies
-RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc
-
-
-# Stage 2: Runtime
-FROM node:10-alpine as runtime
-
-#WORKDIR /packages/app
+RUN apk update && apk add build-essential gcc
 
 # Install firebase-tools
 RUN npm install -g firebase-tools
