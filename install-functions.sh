@@ -6,4 +6,7 @@ if [ -z "${FIREBASE_TOKEN}" ]; then
 fi
 
 echo "HELLO WORLD!"
+ls
+cd functions
+yarn install && yarn build
 firebase deploy --token ${FIREBASE_TOKEN} --only functions
