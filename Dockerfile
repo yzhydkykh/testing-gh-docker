@@ -1,5 +1,5 @@
 # Stage 1: Build
-FROM node:10-alpine
+FROM node:18-alpine
 
 #WORKDIR /packages/app
 
